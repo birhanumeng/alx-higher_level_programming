@@ -3,28 +3,28 @@
 
 /**
  * check_cycle - Checks if a singly-linked list contains a cycle.
- * @list: A singly-linked list.
+ * @list: single linked list.
  *
  * Return: If there is no cycle - 0.
  *         If there is a cycle - 1.
  */
 int check_cycle(listint_t *list)
 {
-	listint_t *turtle, *hare;
+	listint_t *node1, *node2;
 
 	if (list == NULL || list->next == NULL)
 		return (0);
 
-	turtle = list->next;
-	hare = list->next->next;
+	node1 = list->next;
+	node2 = list->next->next;
 
-	while (turtle && hare && hare->next)
+	while (node1 && node2 && node2->next)
 	{
-		if (turtle == hare)
+		if (node1 == node2)
 			return (1);
 
-		turtle = turtle->next;
-		hare = hare->next->next;
+		node1 = node1->next;
+		node2 = node2->next->next;
 	}
 
 	return (0);
