@@ -2,8 +2,5 @@
 
 def common_elements(set_1, set_2):
     """Print common elements to both set_1 and set_2."""
-    my_set = {}
-    for i in set_1 & set_2:
-        my_set.append(i)
-    return my_set
+    return set_1 & set_2
 
