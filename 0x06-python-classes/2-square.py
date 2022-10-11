@@ -1,16 +1,19 @@
 #!/usr/bin/python3
-"""Square Class"""
+"""Square class"""
 
 
 class Square:
-
+    """A class named Square
+    Attributes:
+    attr1 (size): size of square
+    """
     def __init__(self, size=0):
-        """__init__"""
-
-        if type(size) is not int:
-            raise TypeError('size must be an integer')
-
+        """
+        Args:
+        size (int): size for __size attribute of class instance
+        """
+        if type(size) != int:
+            raise TypeError("size must be an integer")
         if size < 0:
-            raise ValueError('size must be >= 0')
-
+            raise ValueError("size must be >= 0")
         self.__size = size
