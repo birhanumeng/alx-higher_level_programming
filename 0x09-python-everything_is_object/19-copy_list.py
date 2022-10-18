@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+
+
 def copy_list(l):
-    """copy of list"""
+    """Copy of list"""
+
     return l.copy()
