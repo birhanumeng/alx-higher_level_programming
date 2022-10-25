@@ -1,11 +1,8 @@
 #!/usr/bin/python3
-"""Define a function for read a string."""
+"""Defines function for inserting string"""
 
 
-def number_of_lines(filename=""):
-    """Returns number of lines in a text file."""
-    count = 0
-    with open(filename) as f:
-        for line in f:
-            count += 1
-        return count
+def write_file(filename="", text=""):
+    """Write a string to text file using UTF8 encoding."""
+    with open(filename, "w", encoding="utf-8") as f:
+        return f.write(text)
