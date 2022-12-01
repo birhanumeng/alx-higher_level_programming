@@ -5,7 +5,7 @@ SELECT DISTINCT `name`
        ON t_g.`id` = t_sg.`genre_id`
 
        INNER JOIN `tv_shows` AS t_s
-       ON t_s.`show_id` = t_s.`id`
+       ON t_sg.`show_id` = t_s.`id`
        WHERE tv_genres.`name` NOT IN
              (SELECT `name`
                 FROM `tv_genres` As t_g
