@@ -5,3 +5,4 @@ SELECT `title`, SUM(`rate`) AS `rating`
        ON tv.`id` = tv.r.`show_id`
  GROUP BY `title`
  ORDER BY `rating` DESC;
+
