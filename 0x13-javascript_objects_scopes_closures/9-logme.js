@@ -1,6 +1,5 @@
 #!/usr/bin/node
 exports.logMe = function (item) {
-  let prNum = 0;
-  console.log(prNum + ': ' + item);
-  prNum++;
+  this.times = (this.times || 0) + 1;
+  console.log(this.times + ': ' + this.item);
 };
