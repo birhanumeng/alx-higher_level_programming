@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Lists all recorde that matchs in states table of hbtn_0e_0_usa db."""
+"""Lists states by name in states table of hbtn_0e_0_usa db."""
 
 from sys import argv
 import MySQLdb
