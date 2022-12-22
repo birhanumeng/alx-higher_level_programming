@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Lists all states from hbtn_0e_0_usa"""
 
-import argv from sys
+from sys import argv
 import MySQLdb
 
 if __name__ == "__main__":
