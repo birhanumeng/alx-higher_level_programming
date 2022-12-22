@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Lists states by name from stats table free from MySQL injection"""
 
-from sys import sys
+from sys import argv
 import MySQLdb
 
 if __name__ == "__main__":
