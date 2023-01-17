@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-"""Fetches body data from url"""
-from urllib.request import urlopen
+"""fetches https://alx-intranet.hbtn.io/status"""
+import urllib.request
 
 
 if __name__ == "__main__":
-    with urlopen(https://alx-intranet.hbtn.io/status) as response:
+    with urllib.request.urlopen(https://alx-intranet.hbtn.io/status) as response:
         body = response.read()
         print("Body response:")
         print("\t- type: {}".format(type(body)))
