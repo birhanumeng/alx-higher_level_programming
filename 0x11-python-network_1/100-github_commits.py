@@ -5,7 +5,7 @@ import sys
 
 if __name__ == "__main__":
 
-    url = "https://api.github.com/repos/{}/{}/commits".format(
+    url = "https://developer.github.com/v3/repos/{}/{}/commits/".format(
         sys.argv[2], sys.argv[1])
     req = requests.get(url)
 
