@@ -7,7 +7,7 @@ request(url, (err, res, body) => {
   if (!err) {
     const chars = JSON.parse(body).characters;
     chars.forEach((ch) => {
-      request(ch, (err, res, body) {
+      request(ch, (err, res, body) => {
         if (!err) {
           console.log(JSON.parse(body).name);
         }
