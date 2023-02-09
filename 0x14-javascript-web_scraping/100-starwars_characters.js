@@ -2,13 +2,12 @@
 
 const request = require('request');
 const url = 'https://swapi.co/api/films/' + process.argv[2];
-
-request(url, (err, res, body) => {
-  if (!err) {
-    const chars = JSON.parse(body).characters;
-    chars.forEach((character) => {
-      request(character, (err, res, body) => {
-        if (!err) {
+request(url, function (error, response, body) {
+  if (!error) {
+    const characters = JSON.parse(body).characters;
+    characters.forEach((character) => {
+      request(character, function (error, response, body) {
+        if (!error) {
           console.log(JSON.parse(body).name);
         }
       });
