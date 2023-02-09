@@ -7,5 +7,6 @@ fs.readFile(file, 'utf8', function read(data, err) {
     console.log(err);
     return;
   }
-  console.log(data);
+  const content = data;
+  console.log(content);
 });
