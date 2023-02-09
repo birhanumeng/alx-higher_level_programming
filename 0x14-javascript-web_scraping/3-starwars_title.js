@@ -7,5 +7,5 @@ request(url + id, (err, res, body) => {
   if (err) {
     console.log(err);
   }
-  console.log(JSON.parse(res).title);
+  console.log(JSON.parse(body).title);
 });
